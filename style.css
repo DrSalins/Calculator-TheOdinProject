@@ -1,0 +1,173 @@
+* {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.backgroundCover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000080;
+  height: 100vh;
+  width: 100vw;
+  padding: 30px;
+}
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.navBar a {
+  text-decoration: none;
+  color: white;
+}
+.navBar li {
+  list-style-type: none;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  font-size: 60px;
+  align-content: center;
+  justify-content: center;
+  color: white;
+}
+.operandLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100px;
+  width: 100%;
+}
+.display {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  color: white;
+  font-size: 40px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  height: 40px;
+  width: 100px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 17px;
+}
+.btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn:hover span {
+  padding-right: 25px;
+}
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.add span:after {
+  content: "\+";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.subtract span:after {
+  content: "-";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.multiply span:after {
+  content: "\x";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.divide span:after {
+  content: "\÷";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.calculatorSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.calculatorApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.display {
+  background-color: black;
+  border: 1px solid black;
+  height: 70px;
+  width: 215px;
+  padding: 3.8px;
+  font-size: 40px;
+}
+.grp1,
+.grp2,
+.grp3,
+.grp4,
+.grp5 {
+  width: 215px;
+  background-color: black;
+  height: 50px;
+  padding: 5px;
+}
+button {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  background-color: #5c6b9c;
+  border: none;
+  border-color: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.divisonBtn,
+.multiplyBtn,
+.subtractBtn,
+.additionBtn,
+.equalBtn {
+  background-color: #888888;
+}
+.splitScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title p {
+  font-size: 17px;
+  text-align: center;
+}
+.goText {
+  color: #7fffd4;
+}

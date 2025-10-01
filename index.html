@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="splitScreen">
+      <div class="backgroundCover">
+        <div class="navBar">
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#calculator"><li>Calculator</li></a>
+          </ul>
+        </div>
+        <div class="title">
+          <h1>Calculator</h1>
+          <div class="operandLogos">
+            <div class="btn add"><span>Add</span></div>
+            <div class="btn subtract"><span>Subtract</span></div>
+            <div class="btn multiply"><span>Multiply</span></div>
+            <div class="btn divide"><span>Divide</span></div>
+          </div>
+          <p>Note: This works with the keyboard too! Give it a <p class="goText">GO!</p></p>
+        </div>
+      </div>
+      <div class="calculatorApp">
+        <div class="display">0</div>
+        <div class="grp1">
+          <button class="clear" data-key="AC">AC</button>
+          <button class="plusOrMinus" data-key="n">+/-</button>
+          <button class="percentage" data-key="%">%</button>
+          <button class="divisonBtn" data-key="÷">÷</button>
+        </div>
+        <div class="grp2">
+          <button class="7" data-key="7">7</button>
+          <button class="8" data-key="8">8</button>
+          <button class="9" data-key="9">9</button>
+          <button class="multiplyBtn" data-key="X">X</button>
+        </div>
+        <div class="grp3">
+          <button class="4" data-key="4">4</button>
+          <button class="5" data-key="5">5</button>
+          <button class="6" data-key="6">6</button>
+          <button class="subtractBtn" data-key="-">-</button>
+        </div>
+        <div class="grp4">
+          <button class="1" data-key="1">1</button>
+          <button class="2" data-key="2">2</button>
+          <button class="3" data-key="3">3</button>
+          <button class="additionBtn" data-key="+">+</button>
+        </div>
+        <div class="grp5">
+          <button class="clearBtn" data-key="DEL">DEL</button>
+          <button class="0" data-key="0">0</button>
+          <button class="decimal" data-key=".">.</button>
+          <button class="equalBtn" data-key="=">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
